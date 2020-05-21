@@ -1,13 +1,14 @@
 import React from 'react'
+import {CardDiv} from './Styled'
 
 function User(props){
-    const { email} = props.info
-// first_name,
+    const {first_name, email} = props.info
+
     return(
-        <div>
-            {/* <h2>{first_name}</h2> */}
+        <CardDiv className='user'>
+            <h2>{first_name}</h2>
             <h4>Email: {email}</h4>
-        </div>
+        </CardDiv>
     )
 }
 
